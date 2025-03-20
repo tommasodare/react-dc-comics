@@ -58,9 +58,21 @@ export default function Footer() {
                 </div>
             </section>
             <section id="second_footer">
-                <div>
+                <div id="container_second_footer">
+                    <div id="left_second">
+                        <button id="btn">SIGN-UP NOW!</button>
+                    </div>
+                    <div id="rigth_second">
+                        <p>FOLLOW US</p>
+                        <div id="social_icons">
+                            <img src="img/footer-facebook.png" alt="" />
+                            <img src="img/footer-twitter.png" alt="" />
+                            <img src="img/footer-youtube.png" alt="" />
+                            <img src="img/footer-pinterest.png" alt="" />
+                            <img src="img/footer-periscope.png" alt="" />
+                        </div>
+                    </div>
                 </div>
-                <div>Follow Us</div>
             </section>
         </footer>
     )
