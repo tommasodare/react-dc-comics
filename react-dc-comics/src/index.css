@@ -109,3 +109,57 @@ header {
         }
     }
 }
+
+#main_footer {
+    /* min-height: 500px; */
+    background-image: url("img/footer-bg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    #container_main_footer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        display: flex;
+
+        #link_box {
+            width: 50%;
+            display: flex;
+            align-items: baseline;
+            gap: 2rem;
+
+            li,
+            p {
+                color: white;
+            }
+
+            li {
+                font-size: bold;
+                font-size: 12px;
+                color: grey;
+                list-style: none;
+                padding-bottom: 0.5rem;
+            }
+
+            p {
+                padding-bottom: 1rem;
+                font-size: 20px;
+            }
+        }
+
+        #logo_box {
+            width: 50%;
+
+            img {
+                width: 80%;
+            }
+        }
+    }
+
+
+}
+
+#second_footer {
+    background-color: #303030;
+    min-height: 150px;
+}
