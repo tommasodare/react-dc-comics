@@ -21,7 +21,7 @@ export default function Main() {
                         <p>SUBSCRIPTIONS</p>
                     </div>
                     <div className="icon">
-                        <img width="25px" src="img/buy-comics-shop-locator.png" alt="" />
+                        <img width="30px" src="img/buy-comics-shop-locator.png" alt="" />
                         <p>COMIC SHOP LOCATOR</p>
                     </div>
                     <div className="icon">

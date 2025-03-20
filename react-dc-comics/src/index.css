@@ -34,7 +34,9 @@ header {
             list-style: none;
 
             li {
+                font-weight: 300;
                 font-weight: bold;
+                letter-spacing: inherit;
                 font-size: 12px;
                 text-transform: uppercase;
                 position: relative;
@@ -59,6 +61,11 @@ header {
     }
 }
 
+main {
+    position: relative;
+    z-index: 3;
+}
+
 #content_container {
     min-height: 150px;
     background-color: black;
@@ -80,6 +87,7 @@ header {
     background-color: blue;
     display: flex;
     justify-content: center;
+    z-index: 1;
 
     #icons_box {
         width: 60%;
@@ -116,13 +124,14 @@ header {
     background-size: cover;
     display: flex;
     justify-content: center;
+    position: relative;
 
     #container_main_footer {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
         display: flex;
 
         #link_box {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
             width: 50%;
             display: flex;
             align-items: baseline;
@@ -138,7 +147,7 @@ header {
                 font-size: 12px;
                 color: grey;
                 list-style: none;
-                padding-bottom: 0.5rem;
+                padding-bottom: 0.3rem;
             }
 
             p {
@@ -149,9 +158,13 @@ header {
 
         #logo_box {
             width: 50%;
+            position: absolute;
+            top: -30px;
+            right: -50px;
+            z-index: 0;
 
             img {
-                width: 80%;
+                width: 60%;
             }
         }
     }
@@ -165,6 +178,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 
     #container_second_footer {
         width: 60%;
