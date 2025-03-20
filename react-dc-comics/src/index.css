@@ -47,7 +47,7 @@ header {
                     left: 0;
                     width: 100%;
                     height: 4px;
-                    background-color: blue;
+                    background-color: #0282f9;
                 }
 
                 &:hover {
@@ -59,14 +59,53 @@ header {
     }
 }
 
-main {
-    background-color: green;
+#content_container {
+    min-height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     #content_box {
         width: 60%;
-    }
 
-    #icon_box {
+        h1 {
+            color: white;
+        }
+    }
+}
+
+#icons_container {
+    min-height: 100px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+
+    #icons_box {
         width: 60%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .icon {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            img {
+                max-width: 20%;
+            }
+
+            p {
+                color: white;
+                font-size: 12px;
+            }
+        }
     }
 }
