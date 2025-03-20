@@ -8,11 +8,11 @@
 header {
     display: flex;
     justify-content: center;
-    background-color: white;
-    padding: 1rem
+    background-color: rgb(245, 0, 0),
 }
 
 #header_box {
+    padding: 1rem 0;
     width: 60%;
     display: flex;
 
@@ -20,7 +20,7 @@ header {
         width: 30%;
 
         img {
-            max-width: 100%;
+            max-width: 50%;
         }
     }
 
@@ -28,21 +28,37 @@ header {
         width: 70%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
 
         ul {
             width: 100%;
             display: flex;
             justify-content: space-between;
-            /* gap: 2rem; */
             list-style: none;
 
             li {
+                padding: 2rem 0;
                 font-weight: bold;
                 font-size: 12px;
                 text-transform: uppercase;
+
+                &:hover {
+                    border-bottom: solid 2px blue;
+                    font-size: 15px;
+                }
             }
 
         }
+    }
+}
+
+main {
+    background-color: green;
+
+    #content_box {
+        width: 60%;
+    }
+
+    #icon_box {
+        width: 60%;
     }
 }
