@@ -8,20 +8,16 @@
 header {
     display: flex;
     justify-content: center;
-    background-color: rgb(245, 0, 0),
 }
 
 #header_box {
-    padding: 1rem 0;
     width: 60%;
     display: flex;
 
     #logo_box {
         width: 30%;
-
-        img {
-            max-width: 50%;
-        }
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     #list_box {
@@ -30,19 +26,31 @@ header {
         align-items: center;
 
         ul {
+            height: 100%;
             width: 100%;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             list-style: none;
 
             li {
-                padding: 2rem 0;
                 font-weight: bold;
                 font-size: 12px;
                 text-transform: uppercase;
+                position: relative;
+                padding: 3.75rem 0;
+
+                &:hover::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 4px;
+                    background-color: blue;
+                }
 
                 &:hover {
-                    border-bottom: solid 2px blue;
                     font-size: 15px;
                 }
             }
