@@ -1,5 +1,7 @@
 export default function Main() {
     return (
-        <h1>Main</h1>
+        <main>
+            <p>Ciao Main</p>
+        </main>
     )
 }
