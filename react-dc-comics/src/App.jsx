@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import Header from './components/Header'
+import Jumbotron from './components/Jumbotron'
 import Main from './components/Main'
-import Footer from './components/Footer'
 import Main_2 from './components/Main_2'
+import Footer from './components/Footer'
+
 
 function App() {
 
@@ -10,6 +12,7 @@ function App() {
 
     <>
       <Header />
+      <Jumbotron />
       <Main />
       <Main_2 />
       <Footer />

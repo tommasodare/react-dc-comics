@@ -61,6 +61,10 @@ header {
     }
 }
 
+#jumbotron_box {
+    min-height: 400px;
+    background-image: url(../public/img/jumbotron.jpg);
+}
 
 #content_container {
     min-height: 150px;
