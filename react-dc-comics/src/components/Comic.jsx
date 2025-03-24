@@ -1,14 +1,19 @@
-export default function Comic({ image, title }) {
+import comics from '../../dc-comics-2/comics'
+
+export default function Comic() {
 
     return (
 
         <>
-            <div className="comic_box">
-                <img src={image} alt="" />
-                <p>{title}</p>
-            </div>
-        </>
 
+            {comics.map((comic) => (
+                <div className="comic_box" key={comic.id}>
+                    <img src={comic.thumb} alt="" />
+                    <p>{comic.series}</p>
+                </div>
+            ))}
+
+        </>
 
     )
 }
